@@ -1,0 +1,23 @@
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  background-color:#F5F5F5;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+</style>
