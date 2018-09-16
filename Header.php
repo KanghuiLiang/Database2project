@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta>
+<link rel="icon" href="database.png" type="image/png" sizes = "16x16"/>
 <link rel="stylesheet" href="CSS/Header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,7 +16,7 @@
 <div class="topnav">
   <div class="row">
     <div class="col-md-2">
-	<a href="index.php">DataBase2</a>
+	<a href="Welcome.php">DataBase2</a>
 </div>
 <div class="col-md-2"></div>
 <div class="col-md-4">
@@ -34,13 +35,13 @@
   </div>
   <!-- sidebar -->
 <div class="sidebar">
-  <a href="index.php"><i class="fas fa-home"></i> Home</a>
+  <a href="welcome.php"><i class="fas fa-home"></i> Home</a>
   <a href="table.php"><i class="fas fa-chart-bar"></i> Report</a>
   <a href="form.php"><i class="fab fa-wpforms"></i> Forms</a>
-  <a href="form.php"><i class="fas fa-archive"></i> Stock</a>
+  <a href="Stock.php"><i class="fas fa-archive"></i> Stock</a>
   <a href="user_list.php"><i class="fas fa-user"></i> Users</a>
-  <a href="user_list.php"><i class="fas fa-map-marker-alt"></i> Location</a>
-  <a href="user_list.php"><i class="fas fa-truck"></i> Track</a>
+  <a href="location.php"><i class="fas fa-map-marker-alt"></i> Location</a>
+  <a href="track.php"><i class="fas fa-truck"></i> Track</a>
 </div>
 </body>
 </html>
