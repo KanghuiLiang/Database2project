@@ -11,7 +11,12 @@
 <body>
     <div class="main">
       <div class="row">
+      <div class="col-md-9">
   <h2>Stock on Hand</h2>
+</div>
+  <div class="col-md-3">
+<h2> <button style="background-color:#e7e7e7"> <i class="fas fa-plus-square"></i><a href="stock.php">Add Item</a></button></h2>
+</div>
   </div>
   <table class="table table-striped">
     <thead>
@@ -43,7 +48,7 @@
       </tr>
     </tbody>
   </table>
- <div class="row"><i class="fas fa-plus-square"></i><a href="stock.php">Add Item</a></div>
+
 </div>
 
 </body>
