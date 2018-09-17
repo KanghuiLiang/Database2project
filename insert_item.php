@@ -1,7 +1,7 @@
 <?php
 include('connection.php');
 
-$item = $_POST['item'];
+$item = $_POST['itemCode'];
 $detail = $_POST['detail'];
 $price = $_POST['price'];
 $size = $_POST['size'];

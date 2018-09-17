@@ -86,14 +86,14 @@
                                     <td  class="text-semibold text-dark">123</td>
                                     <td class="text-semibold text-dark" id="item" name="item[]">Product/Service Name</td>
                                     <td  class="amount">100.00</td>
-                                    <input class="text-semibold text-dark" name="price[]">10</td>
+                                   <!--  <input class="text-semibold text-dark" name="price[]">10</td> -->
                                 </tr>   <!-- first -->     
                             <tr id="prodinv"></tr>
                                 <tr id="prodinv">
                                     <td  class="text-semibold text-dark">123</td>
                                     <td class="text-semibold text-dark" id="item" name="item[]">Product/Service Name</td>
                                     <td  class="amount">100.00</td>
-                                    <input class="text-semibold text-dark" name="price[]">10</td>
+                                    <!-- <input class="text-semibold text-dark" name="price[]">10</td> -->
                                 </tr>                          
                             </tbody>
                         </table>

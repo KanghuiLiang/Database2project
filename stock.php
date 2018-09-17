@@ -19,7 +19,6 @@
 <h2> <button> <i class="fas fa-plus-square"></i><a href="add_Item.php">Add Item</a></button></h2>
 </div>
   </div>
-  <form action="Stock.php" method ="get">
 <table class="table table-striped">
     <thead>
       <tr>
@@ -37,12 +36,12 @@
     if($result -> num_rows>0){
       while($row = $result -> fetch_assoc()){
         echo '<tr>';
-        echo '<td>'.$row['item'].'</td>';
-        echo '<td>'.$row['Detail'].'</td>';
-        echo '<td>'.$row['Price'].'</td>';
-        echo '<td>'.$row['Size'].'</td>';
-        echo "<td><a href='edit_item.php?item=".$row['item']."'><i class='fas fa-pen'></i>Update</a></td>";
-        echo "<td><a href='delete_item.php?item=".$row['item']."'><i class='fas fa-trash-alt'></i>Delete</a></td>";
+        echo '<td>'.$row['itemCode'].'</td>';
+        echo '<td>'.$row['detail'].'</td>';
+        echo '<td>'.$row['price'].'</td>';
+        echo '<td>'.$row['size'].'</td>';
+        echo "<td><a href='edit_item.php?itemCode=".$row['itemCode']."'><i class='fas fa-pen'></i>Update</a></td>";
+        echo "<td><a href='delete_item.php?itemCode=".$row['itemCode']."'><i class='fas fa-trash-alt'></i>Delete</a></td>";
         echo '</tr>';
       }
     }

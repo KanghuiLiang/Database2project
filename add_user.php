@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,12 +18,12 @@
 			                <div class="login-wrap">
 			                    <div class="login-content">
 			                        <div class="login-logo">
-			                            <h4>Stock-In Hand</h4>
+			                            <h4>Add New Account</h4>
 			                        </div>
 			                        	<form action="insert_item.php" method="POST">
 			                        		<div class="form-group">
-		                                    <label><strong>Item</strong></label>
-		                                    <input class="au-input au-input--full" type="text" name="itemCode"> 
+		                                    <label><strong></strong></label>
+		                                    <input class="au-input au-input--full" type="text" name="item"> 
                                				</div>
 
                                				<div class="form-group">

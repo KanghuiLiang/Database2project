@@ -19,8 +19,8 @@
     <body>
     	<div class="main">
     		<div class="form">
-    		<form action="get_trackingID.php">
-    		 Tracking ID: <input type="id">
+    		<form action="get_trackingID.php" method="post">
+    		 Tracking ID: <input type="id" name="id">
             <button><i class="fas fa-search"></i></button>
     		</form>
     	</div>

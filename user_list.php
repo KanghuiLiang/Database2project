@@ -1,5 +1,6 @@
   <?php
     include_once('index.php');
+    include('connection.php');
     ?>
 
 <!DOCTYPE html>
@@ -15,48 +16,37 @@
   <h2>Employee</h2>
 </div>
   <div class="col-md-3">
-<h2> <button> <i class="fas fa-plus-square"></i><a href="add_Item.php">Add</a></button></h2>
+<h2> <button> <i class="fas fa-plus-square"></i><a href="add_user.php">Add</a></button></h2>
 </div>
   </div>
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>ITEM</th>
-        <th>DETAIL</th>
-        <th>Price</th>
-        <th>SIZE</th>
+        <th>User ID</th>
+        <th>User Permission</th>
         <th>Action</th>
       </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td></td>
-        <td><i class="fas fa-pen"></i>Update
-            <i class="fas fa-trash-alt"></i>Delete
-        </td>
+      </thead>
+  <?php
+    $sql = "SELECT userID, userPermission FROM account";
+    $result = $conn->query($sql);
 
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-        <td></td>
-        <td><i class="fas fa-pen"></i>Update
-          <i class="fas fa-trash-alt"></i>Delete
-        </td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-        <td></td>
-        <td><i class="fas fa-pen"></i>Update
-        <i class="fas fa-trash-alt"></i>Delete
-        </td>
-      </tr>
+    if($result -> num_rows>0){
+      while($row = $result -> fetch_assoc()){
+        echo '<tr>';
+        echo '<td>'.$row['userID'].'</td>';
+        echo '<td>'.$row['userPermission'].'</td>';
+        echo "<td><a href='edit_user.php?userID=".$row['userID']."'><i class='fas fa-pen'></i>Update</a></td>";
+        echo "<td><a href='delete_user.php?userID=".$row['userID']."'><i class='fas fa-trash-alt'></i>Delete</a></td>";
+        echo '</tr>';
+      }
+
+    }else{
+      echo $conn->error;
+    }
+
+    $conn->close();
+  ?>
     </tbody>
   </table>
 

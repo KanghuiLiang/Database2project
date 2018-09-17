@@ -1,8 +1,7 @@
 <?php
 include('connection.php'); 
-$item = $_GET['item'];
-echo "$item";
-$sql ="DELETE FROM test.item WHERE item = '$item'";
+$item = $_GET['itemCode'];
+$sql ="DELETE FROM item WHERE itemCode = '$item'";
 if($conn->query($sql)){
 	// echo "$item is deleted.";
     header ("Location: Stock.php");
