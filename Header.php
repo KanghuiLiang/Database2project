@@ -36,7 +36,7 @@
   <!-- sidebar -->
 <div class="sidebar">
   <a href="welcome.php"><i class="fas fa-home"></i> Home</a>
-  <a href="table.php"><i class="fas fa-chart-bar"></i> Report</a>
+  <a href="report.php"><i class="fas fa-chart-bar"></i> Report</a>
   <a href="form.php"><i class="fab fa-wpforms"></i> Forms</a>
   <a href="Stock.php"><i class="fas fa-archive"></i> Stock</a>
   <a href="user_list.php"><i class="fas fa-user"></i> Users</a>
