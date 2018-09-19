@@ -22,24 +22,15 @@
 			                        </div>
 			                        	<form action="insert_item.php" method="POST">
 			                        		<div class="form-group">
-		                                    <label><strong></strong></label>
-		                                    <input class="au-input au-input--full" type="text" name="item"> 
+		                                    <label><strong>User ID</strong></label>
+		                                    <input class="au-input au-input--full" type="text" name="ID"> 
                                				</div>
 
                                				<div class="form-group">
-		                                    <label><strong>Detail</strong></label>
-		                                   	<input class="au-input au-input--full" type="text" name="detail">
+		                                    <label><strong>User Password</strong></label>
+		                                   	<input class="au-input au-input--full" type="text" name="Password">
                                				</div>
-
-                               				<div class="form-group">
-		                                    <label><strong>Price</strong></label>
-		                                    <input class="au-input au-input--full" type="text" name="price">
-                               				</div>
-                               				
-                               				<div class="form-group">
-		                                    <label><strong>Size</strong></label>
-		                                    <input class="au-input au-input--full" type="text" name="size">
-                               				</div>
+                               			
 												<button class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">Submit</button>
 			                        	</form>
 			                    </div>
