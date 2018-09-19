@@ -7,7 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Title Page-->
-    <title>Stock</title>
+    <title>Add New User</title>
 
 </head>
 
@@ -20,7 +20,7 @@
 			                        <div class="login-logo">
 			                            <h4>Add New Account</h4>
 			                        </div>
-			                        	<form action="insert_item.php" method="POST">
+			                        	<form action="insert_user.php" method="POST">
 			                        		<div class="form-group">
 		                                    <label><strong>User ID</strong></label>
 		                                    <input class="au-input au-input--full" type="text" name="ID"> 
@@ -28,7 +28,12 @@
 
                                				<div class="form-group">
 		                                    <label><strong>User Password</strong></label>
-		                                   	<input class="au-input au-input--full" type="text" name="Password">
+		                                   	<input class="au-input au-input--full" type="password" name="Password">
+                               				</div>
+
+                               				<div class="form-group">
+		                                    <label><strong>User Permission</strong></label>
+		                                   	<input class="au-input au-input--full" type="text" name="Permission">
                                				</div>
                                			
 												<button class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">Submit</button>
