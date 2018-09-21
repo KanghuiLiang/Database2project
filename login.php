@@ -14,20 +14,20 @@
 <div class="main-div">
     <div class="panel">
    <h2>Admin Login</h2>
-   <p>Please enter your email and password</p>
+   <p>Please enter User Name and password</p>
    </div>
-    <form id="Login">
+    <form id="Login" action="loginAction.php">
 
         <div class="form-group">
 
 
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+            <input type="text" class="form-control" id="userID" placeholder="User ID">
 
         </div>
 
         <div class="form-group">
 
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            <input type="password" class="form-control" id="Password" placeholder="Password">
 
         </div>
         <div class="forgot">
